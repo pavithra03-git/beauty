@@ -1,0 +1,358 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("https://marketplace.canva.com/EAGOcYqp8Qo/1/0/1600w/canva-pink-light-pink-gradient-color-and-style-video-background-mKo-t7CIvzQ.jpg");
+    box-shadow: 0px 0px 20px 0px black;
+    color: white;
+    padding: 30px;
+    position:fixed;
+    z-index: 999;
+    top: 0px;
+}
+nav h1{
+    font-size: 2rem;
+    animation: head 2s infinite;
+    position: relative;
+}
+@keyframes head {
+    0%{
+        left: 0%;
+        scale: 0;
+    }
+    100%{
+        left: 10%;
+        scale: 1;
+    }
+}
+
+.sub{
+    display: flex;
+    gap:10px;
+}
+.sub a{
+    color: white;
+    text-decoration: none;
+    animation: ank 2s infinite;
+    position: relative;
+}
+@keyframes ank {
+    0%{
+        text-decoration: none;
+        left: 0;
+    }
+    100%{
+        text-decoration: underline;
+        left: 10px;
+    }
+}
+.sub a:hover{
+    color: black;
+    scale: 1.1;
+}
+nav h5{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+nav h5:hover{
+    color: black;
+    scale: 1.1;
+}
+nav p{
+    display: none;
+}
+header{
+    background-image:url("https://png.pngtree.com/background/20210711/original/pngtree-cartoon-hand-drawn-beauty-makeup-festival-literary-little-fresh-girl-white-picture-image_1121260.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 2rem;
+    color: deeppink;
+}
+
+header button{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: deeppink;
+    border: 2px solid deeppink;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px ;
+    padding: 10px;
+}
+header button:hover{
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0px 0px 20px 0px black;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+/*----------------------------------------------- About page ----------------------------------------------*/
+.about{
+    margin-top: 20px;
+    padding: 30px;
+}
+.about h1{
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 3rem;
+}
+h1 span{
+    color: white;
+}
+.image{
+    display: flex;
+}
+.image h4{
+    color: deeppink;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.image p{
+    color: black;
+    font-size: 1rem;
+}
+video{
+    clip-path: inset(11% 9% 10% 10%);
+}
+.image div{
+    margin-top: 40px;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    background-color: lightpink;
+    padding: 20px;
+}
+.offer i{
+    font-size: 2rem;
+}
+/*--------------------------------------------- products page --------------------------------*/
+.product{
+    padding: 50px;
+}
+.product h1{
+    background-color:lightcoral;
+    color: purple;
+    text-align: center;
+    font-size: 3rem;
+}
+.things{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px; 
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid deeppink;
+    padding: 20px;
+}
+.card img{
+    height: 70%;
+    width:100%;
+    animation: thin 3s;
+    position: relative;
+    animation-timeline: view();
+}
+@keyframes thin {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale:1;
+    }
+    
+}
+.card h2{
+    color: peru;
+    font-size: 1.5rem;
+}
+.card:hover{
+    scale:1.1;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.card p{
+    color:black;
+}
+.card button{
+    background-color: lightpink;
+    color: purple;
+    border-radius: 20px;
+    border: 2px solid deeppink;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+.card button:hover{
+    background-color: deeppink;
+}
+/*------------------------------------------------ contact ---------------------------------------*/
+.contact{
+    height: 50vh;
+    padding: 30px;
+}
+.contact h1{
+    background-color:pink;
+    color: rgb(110, 5, 40);
+    font-size: 2rem;
+    text-align: center;
+}
+.contact h1 span{
+    color: white;
+}
+.content{
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+}
+.form{
+    height: 100%;
+    width: 50%;
+    background-color: lightcoral;
+    padding: 30px;
+    line-height: 2.5;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.form input{
+    width: 90%;
+    padding: 5px;
+}
+.form button{
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+    border-radius: 30px;
+    padding: 15px;
+}
+.form button:hover{
+    background-color: green;
+    border: 2px solid green;
+}
+.content img{
+    width: 30%;
+    height: 400px;
+    margin-bottom: 20px;
+    animation: girl 2s infinite ease;
+    position: relative;
+}
+@keyframes girl {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+/*------------------------------------------------ footer ------------------------------*/
+footer{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTluhsDjbZ483bHb1pjxwgmSp7qhO1c6oIW7Q&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20%;
+    text-align: center;
+    /* padding: 100px; */
+}
+.foot{
+    display: flex;
+    gap: 50px;
+    margin-left: 300px;
+}
+footer h1{
+    color: white;
+    font-size: 2rem;
+}
+footer h4{
+    color: lightyellow;
+    font-size: 1.5rem;
+}
+footer p{
+    color:chartreuse;
+    font-size: 1rem;
+}
+footer h1+p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+footer h4:hover{
+    scale: 1.1;
+    color: black;
+}
+footer h1+p:hover{
+    scale: 1.1;
+    color: gold;
+}
+.box{
+    width: 100%;
+}
+/*----------------------------------------------- Responsive --------------------------------*/
+@media only screen and (min-width:300px) and (max-width:850px) {
+    nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav h1,p{
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    header{
+        width: 100%;
+    }
+    .about{
+        width: 100%;
+    }
+    .image{
+        flex-direction: column;
+    }
+    .things{
+        grid-template-columns: auto;
+    }
+    .product h1{
+        font-size: 2rem;
+    }
+    .offer{
+        flex-direction: column;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .foot{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .content img{
+        display: none;
+    }
+    .form{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    footer{
+        margin-top: 300px;
+    }
+}
